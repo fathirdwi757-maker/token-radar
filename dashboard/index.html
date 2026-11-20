@@ -1,1 +1,31 @@
-placeholder
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch Radar — pre-token protocols ranked by what their launch would be worth</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to the board</a>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <div>
+      <h1>Launch Radar</h1>
+      <p class="tagline">Protocols that record no token yet, ranked by what their launch would be worth — and how to farm each one.</p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" data-view="board" class="tab active">Radar board</button>
+    <button type="button" data-view="live" class="tab">Already trading</button>
+    <button type="button" data-view="model" class="tab">The value model</button>
+  </nav>
+</header>
+<section class="stats" id="stats" aria-label="Snapshot summary"></section>
+<main id="view" tabindex="-1" aria-busy="true"></main>
+<footer class="foot" id="foot"></footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
